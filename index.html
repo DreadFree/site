@@ -9,7 +9,14 @@
     </head>
     <body>
  <div id="app">
-   <h1> Hello  {{message}} how are you?</h1>
+   <h1 v-if='view' v-html='message'>   </h1>
+   <h1 v-else> False</h1>
+   
+    <input type="text" v-model="message1">
+   <h1>{{message1}}</h1>
+    <input type="checkbox" v-model="checkbox">
+    <label for="checkbox">{{ checkbox }}</label>
+    <h1 v-pre> {{False Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, nostrum? }}</h1>
  </div>   
         <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
         <script src="script.js"> </script>
